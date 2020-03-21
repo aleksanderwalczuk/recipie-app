@@ -40,6 +40,7 @@ function App() {
                     placeholder={"..."}
                     className={styles.searchBar}
                     onChange={handleInput}
+                    value={query}
                 />
                 {/*<button type={"submit"}>ok</button>*/}
             </form>
