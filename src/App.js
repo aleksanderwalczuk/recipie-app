@@ -2,10 +2,11 @@ import React, {useEffect, useState} from 'react';
 import Recipie from "./Recipie";
 import './App.css';
 import styles from './main.module.css'
+require('dotenv').config();
 
 function App() {
-    const APP_ID = 'c1821ad2'
-    const APP_KEY = '5c9b03666e2887fc9b151e365b3b2595'
+    const APP_ID = process.env.REACT_APP_ID
+    const APP_KEY = process.env.REACT_APP_KEY
     const [recipies, setRecipies] = useState([])
     const [query, setQuery] = useState('')
     const [queryFinished, setQueryFinished] = useState('')
