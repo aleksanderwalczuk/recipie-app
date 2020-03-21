@@ -5,15 +5,18 @@ require('dotenv').config();
 
 const Recipie = props => {
     const [displayModal, setDisplayModal] = useState(false)
-    // console.log(props.modalData)
 
     const Modal = props => {
-        console.log(props)
         return (
             <div
                 className={style.modalContainer}
                 style={{display: displayModal ? 'flex':'none'}}
             >
+                <button
+                    className={style.modalSwitch}
+                    onClick={() => setDisplayModal(!displayModal)}
+                >
+                    x</button>
                 <h3>Ingredients:</h3>
                 <ul className={style.modalListContainer}>
                     {displayModal ? props.items.map((el, idx) => {

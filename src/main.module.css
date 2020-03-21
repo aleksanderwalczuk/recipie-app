@@ -41,6 +41,10 @@
     width: 300px;
     min-height: 50px;
     border: 1px solid lightblue;
+    text-transform: uppercase;
+}
+.btnDescription:focus-within {
+    outline: none;
 }
 
 .modalContainer {
@@ -48,6 +52,7 @@
     top: 0;
     left: 0;
     height: 100%;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -56,14 +61,26 @@
     border-top-right-radius: 1rem;
 }
 
+.modalSwitch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
 .modalListContainer {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     height: 70%;
-    padding: 0 1rem;
-    margin: 0;
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
     overflow: auto;
 }
 .modalListItem {

@@ -38,7 +38,7 @@ function App() {
             <form className={''} onSubmit={getResults}>
                 <input
                     type="text"
-                    placeholder={"..."}
+                    placeholder={"Type a dish..."}
                     className={styles.searchBar}
                     onChange={handleInput}
                     value={query}
