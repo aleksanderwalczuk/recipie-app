@@ -55,6 +55,8 @@ function App() {
                             img={data.image}
                             calories={data.calories}
                             label={data.label}
+                            query={queryFinished}
+                            modalData={data.ingredients}
                         />
                     )
                 })}
